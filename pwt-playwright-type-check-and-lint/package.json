@@ -1,14 +1,21 @@
 {
   "name": "pwt-playwright-type-check-and-lint",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "pretest": "tsc --noEmit && eslint tests/**",
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
     "@playwright/test": "^1.45.3",
-    "@types/node": "^20.14.11"
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.11",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   }
 }
