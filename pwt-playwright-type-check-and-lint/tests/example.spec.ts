@@ -5,7 +5,7 @@ test("test with a type error", async ({ page }) => {
 
   await expect(
     page.getByRole("heading", { name: "Installation" })
-  ).toBeVisibles()
+  ).toBeVisible()
 })
 
 test.skip("test with incorrect promise handling", async ({ page }) => {
