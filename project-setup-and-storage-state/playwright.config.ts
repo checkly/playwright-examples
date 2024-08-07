@@ -1,5 +1,4 @@
 import { defineConfig, devices } from "@playwright/test"
-
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -39,12 +38,12 @@ export default defineConfig({
       testMatch: /.*\.setup\.ts/,
     },
     {
-      name: "chromium",
+      name: "behind-login",
       use: {
         ...devices["Desktop Chrome"],
         storageState: ".auth/user.json",
       },
-      // dependencies: ["setup"],
+      dependencies: ["setup"],
     },
   ],
 
