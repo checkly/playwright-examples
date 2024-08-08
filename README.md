@@ -16,4 +16,4 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 - 🧑‍💻 [Code](/project-setup-and-storage-state/)
 - ✍️ [Article](https://www.checklyhq.com/blog/speed-up-playwright-tests-with-storage-state/)
-- 🎥 Video coming soon...
+- 🎥 [Video](https://www.youtube.com/watch?v=nSHPCLUwwVk)
