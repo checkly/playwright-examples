@@ -12,6 +12,8 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 ## How to Speed up your Playwright Tests with shared "storageState"
 
+![storage-state](https://github.com/user-attachments/assets/c49583a3-902b-4bc5-8fff-05b90ecca904)
+
 - 🧑‍💻 [Code](/project-setup-and-storage-state/)
 - ✍️ [Article](https://www.checklyhq.com/blog/speed-up-playwright-tests-with-storage-state/)
 - 🎥 Video coming soon...
