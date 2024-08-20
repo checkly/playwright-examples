@@ -3,7 +3,7 @@ import { PlaywrightPage } from "./poms/playwright-page"
 
 export const test = base.extend<{ playwrightPage: PlaywrightPage }>({
   playwrightPage: async ({ page }, use) => {
-    const todoPage = new PlaywrightPage(page, "koooo")
+    const todoPage = new PlaywrightPage(page)
     await todoPage.goto()
     await use(todoPage)
   },
@@ -11,6 +11,16 @@ export const test = base.extend<{ playwrightPage: PlaywrightPage }>({
 
 export { expect } from "@playwright/test"
 
+/**
+ * Decorator function for wrapping POM methods in a test.step.
+ *
+ * Use it without a step name `@step()`.
+ *
+ * Or with a step name `@step("Search something")`.
+ *
+ * @param stepName - The name of the test step.
+ * @returns A decorator function that can be used to decorate test methods.
+ */
 export function step(stepName?: string) {
   return function decorator(
     target: Function,
