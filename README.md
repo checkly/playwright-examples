@@ -6,14 +6,10 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 ![types-checking-social](https://github.com/user-attachments/assets/b86dbc82-65a9-4a2e-b7ce-3a20177136ab)
 
-- 🧑‍💻 [Code](/type-check-and-lint)
-- ✍️ [Article](https://www.checklyhq.com/blog/playwright-type-checking-and-linting/)
-- 🎥 [Video](https://www.youtube.com/watch?v=3gT7LuzqOAk)
+### 🧑‍💻 [Code](/type-check-and-lint) | ✍️ [Article](https://www.checklyhq.com/blog/playwright-type-checking-and-linting/) | 🎥 [Video](https://www.youtube.com/watch?v=3gT7LuzqOAk)
 
 ## How to Speed up your Playwright Tests with shared "storageState"
 
 ![storage-state](https://github.com/user-attachments/assets/c49583a3-902b-4bc5-8fff-05b90ecca904)
 
-- 🧑‍💻 [Code](/project-setup-and-storage-state/)
-- ✍️ [Article](https://www.checklyhq.com/blog/speed-up-playwright-tests-with-storage-state/)
-- 🎥 [Video](https://www.youtube.com/watch?v=nSHPCLUwwVk)
+### 🧑‍💻 [Code](/project-setup-and-storage-state/) | ✍️ [Article](https://www.checklyhq.com/blog/speed-up-playwright-tests-with-storage-state/) | 🎥 [Video](https://www.youtube.com/watch?v=nSHPCLUwwVk)
