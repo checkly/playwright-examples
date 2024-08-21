@@ -6,8 +6,6 @@ export class PlaywrightPage {
   readonly page: Page
   readonly searchBtn: Locator
   readonly searchInput: Locator
-  readonly pomLink: Locator
-  readonly tocList: Locator
 
   constructor(page: Page, name = "Playwright Page POM") {
     this.name = name
