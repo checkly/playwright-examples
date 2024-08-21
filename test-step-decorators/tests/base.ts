@@ -3,8 +3,8 @@ import { PlaywrightPage } from "./poms/playwright-page"
 
 export const test = base.extend<{ playwrightPage: PlaywrightPage }>({
   playwrightPage: async ({ page }, use) => {
-    const todoPage = new PlaywrightPage(page)
-    await use(todoPage)
+    const playwrightPage = new PlaywrightPage(page)
+    await use(playwrightPage)
   },
 })
 
