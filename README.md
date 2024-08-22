@@ -13,3 +13,7 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![storage-state](https://github.com/user-attachments/assets/c49583a3-902b-4bc5-8fff-05b90ecca904)
 
 ### 🧑‍💻 [Code](/project-setup-and-storage-state/) | ✍️ [Article](https://www.checklyhq.com/blog/speed-up-playwright-tests-with-storage-state/) | 🎥 [Video](https://www.youtube.com/watch?v=nSHPCLUwwVk)
+
+## Apply Playwright test steps with TypeScript decorators
+
+### 🧑‍💻 [Code](/test-step-decorators/) | ✍️ Article (wip) | 🎥 [Video](https://www.youtube.com/watch?v=of1v9cycTdQ)
