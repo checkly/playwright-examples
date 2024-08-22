@@ -22,7 +22,7 @@ export class PlaywrightPage {
     await this.page.goto("https://playwright.dev")
   }
 
-  @step('Search for "getting started"')
+  @step('Search for "Writing tests"')
   async search() {
     await this.searchBtn.click()
     await this.searchInput.fill("getting started")
