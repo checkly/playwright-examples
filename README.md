@@ -18,4 +18,4 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 ![decorators](https://github.com/user-attachments/assets/98e1a831-e2b9-481e-88d7-149fbc9d9067)
 
-### 🧑‍💻 [Code](/test-step-decorators/) | ✍️ Article (wip) | 🎥 [Video](https://www.youtube.com/watch?v=of1v9cycTdQ)
+### 🧑‍💻 [Code](/test-step-decorators/) | ✍️ [Article](https://www.checklyhq.com/blog/playwright-test-steps-with-typescript-decorators/) | 🎥 [Video](https://www.youtube.com/watch?v=of1v9cycTdQ)
