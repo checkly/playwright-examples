@@ -23,9 +23,9 @@ export class PlaywrightPage {
   }
 
   @step('Search for "Writing tests"')
-  async search() {
+  async search(query) {
     await this.searchBtn.click()
-    await this.searchInput.fill("getting started")
+    await this.searchInput.fill(query)
     await this.page.getByRole("link", { name: "Writing tests" }).click()
     await this.page.getByRole("heading", { name: "Writing tests" }).click()
   }
