@@ -1,0 +1,17 @@
+{
+  "name": "404-detection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.3",
+    "checkly": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
