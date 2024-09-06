@@ -39,7 +39,7 @@ test.describe("No 404s on Checkly pages", () => {
             .soft(response.ok(), `${url} has no green status code`)
             .toBeTruthy()
         } catch {
-          expect.soft(null, `${url} has no green status code`).toBe(200)
+          expect.soft(null, `${url} has no green status code`).toBeTruthy()
         }
       })
     }
