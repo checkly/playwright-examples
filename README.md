@@ -24,4 +24,4 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 ![broken links](https://github.com/user-attachments/assets/ac4ca28b-12e5-44b1-afb4-9a8291cf24fd)
 
-### 🧑‍💻 [Code](/404-detection/) | ✍️ Article (WIP) | 🎥 [Video](https://www.youtube.com/watch?v=EJJ_PYK8YiM)
+### 🧑‍💻 [Code](/404-detection/) | ✍️ [Article](https://www.checklyhq.com/blog/how-to-detect-broken-links-with-playwright/) | 🎥 [Video](https://www.youtube.com/watch?v=EJJ_PYK8YiM)
