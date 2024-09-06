@@ -36,10 +36,10 @@ test.describe("No 404s on Checkly pages", () => {
           const response = await page.request.get(url)
 
           expect
-            .soft(response?.status(), `${url} has no proper 200 status code`)
-            .toBe(200)
+            .soft(response.ok(), `${url} has no green status code`)
+            .toBeTruthy()
         } catch (error) {
-          expect.soft(null, `${url} has no proper 200 status code`).toBe(200)
+          expect.soft(null, `${url} has no green status code`).toBe(200)
         }
       })
     }
