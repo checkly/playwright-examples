@@ -32,4 +32,4 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![Parameterize your custom Playwright fixtures](https://github.com/user-attachments/assets/9801fa83-849b-4fdd-aca8-cfe3df7010f1)
 
 
-### 🧑‍💻 [Code](/parameterized-fixtures/) | ✍️ Article(WIP) | 🎥 [Video](https://www.youtube.com/watch?v=EJJ_PYK8YiM)
+### 🧑‍💻 [Code](/parameterized-fixtures/) | ✍️ Article(WIP) | 🎥 [Video](https://www.youtube.com/watch?v=rRmfYu8hlbw)
