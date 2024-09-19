@@ -25,3 +25,11 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![broken links](https://github.com/user-attachments/assets/ac4ca28b-12e5-44b1-afb4-9a8291cf24fd)
 
 ### 🧑‍💻 [Code](/404-detection/) | ✍️ [Article](https://www.checklyhq.com/blog/how-to-detect-broken-links-with-playwright/) | 🎥 [Video](https://www.youtube.com/watch?v=EJJ_PYK8YiM)
+
+
+## Parameterize your custom Playwright fixtures
+
+![Parameterize your custom Playwright fixtures](https://github.com/user-attachments/assets/9801fa83-849b-4fdd-aca8-cfe3df7010f1)
+
+
+### 🧑‍💻 [Code](/parameterized-fixtures/) | ✍️ Article(WIP) | 🎥 [Video]([https://www.youtube.com/watch?v=EJJ_PYK8YiM](https://www.youtube.com/watch?v=rRmfYu8hlbw))
