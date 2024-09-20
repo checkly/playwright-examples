@@ -23,7 +23,8 @@ export class DashboardPage {
   }
 
   public async login() {
-    await this.page.goto("https://app.checklyhq.com")
+    // set you login URL
+    await this.page.goto("...")
     await this.$email.fill(this.user.email)
     await this.$password.fill(this.user.password)
     await this.$login.click()
