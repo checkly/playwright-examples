@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        background: #041734;
+        color: #eee;
+        width: 80%;
+      }
+      :root {
+        font-family: sans-serif;
+        font-size: 300%;
+        color: #333;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        appearance: button;
+        backface-visibility: hidden;
+        background-color: #405cf5;
+        border-radius: 6px;
+        border-width: 0;
+        box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+          rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+
+        cursor: pointer;
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto,
+          "Helvetica Neue", Ubuntu, sans-serif;
+        font-size: 100%;
+        line-height: 1;
+        margin: 12px 0 0;
+        outline: none;
+        overflow: hidden;
+        padding: 0.125rem 0.5rem 0.25rem;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transform: translateZ(0);
+        transition: all 0.2s, box-shadow 0.08s ease-in;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      button:disabled {
+        cursor: default;
+        background-color: #dcdeeb;
+        color: #444;
+        box-shadow: none;
+      }
+
+      button:focus {
+        box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+          rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+          rgba(50, 151, 211, 0.3) 0 0 0 4px;
+      }
+
+      #result {
+        height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Start session</button>
+    <div id="result"></div>
+
+    <script>
+      const TIMEOUT = 300_000
+      const button = document.querySelector("button")
+      button.addEventListener("click", () => {
+        button.disabled = true
+        document.querySelector(
+          "#result"
+        ).innerHTML = `<p id="timer">Session ends in <strong data-testid="elapsed-time">
+					<relative-time datetime="${new Date(
+            Date.now() + TIMEOUT
+          )}" format="elapsed"></relative-time></strong>.</p>`
+
+        setTimeout(() => {
+          button.disabled = false
+          document.querySelector("#result").innerHTML =
+            "<p>Session is over.</p>"
+        }, TIMEOUT)
+      })
+    </script>
+    <script type="module">
+      import githubrelativeTimeElement from "https://cdn.jsdelivr.net/npm/@github/relative-time-element@4.4.3/+esm"
+    </script>
+  </body>
+</html>

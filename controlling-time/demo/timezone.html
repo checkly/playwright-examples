@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-family: sans-serif;
+        font-size: 300%;
+        background: #041734;
+        color: #eee;
+      }
+
+      body {
+        width: 66%;
+      }
+      .container {
+        text-align: center;
+        margin-top: 20vh;
+      }
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      code {
+        border: 1px solid #243754;
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
+        background: #000724;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script type="module">
+      import githubrelativeTimeElement from "https://cdn.jsdelivr.net/npm/@github/relative-time-element@4.4.3/+esm"
+      const date = new Date(Date.UTC(2024, 9, 25, 14))
+      const dateString = new Intl.DateTimeFormat("en-US", {
+        dateStyle: "full",
+        timeStyle: "short",
+      }).format(date)
+      document.querySelector(".container").innerHTML = `
+				<p>
+					⛰️🥾🎉👫🎉🥾⛰️
+				</p>
+				<h1 data-utc="${date.toISOString()}">${dateString}</h1>
+				<code>${date.toISOString()}</code>
+			`
+    </script>
+  </body>
+</html>
