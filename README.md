@@ -32,9 +32,14 @@ This repository holds the demo code for Checkly tutorials and videos.
 
 ### 🧑‍💻 [Code](/parameterized-fixtures/) | ✍️ [Article](https://www.checklyhq.com/blog/how-to-parameterize-playwright-projects/) | 🎥 [Video](https://www.youtube.com/watch?v=rRmfYu8hlbw)
 
-
 ## Five Playwright CLI features you should know
 
 ![Five Playwright CLI features you should know](https://github.com/user-attachments/assets/97efe257-31f3-48c8-8568-7e407a651bd4)
 
 ### ✍️ [Article](https://www.checklyhq.com/blog/five-playwright-cli-features-you-should-know/) | 🎥 [Video](https://www.youtube.com/watch?v=kw_8LXRSd10)
+
+## How to control time zones and timeouts in Playwright 
+
+![How to control time zones and timeouts in Playwright ](https://github.com/user-attachments/assets/fbf07a0a-3202-44fc-9931-ba71ecbd162e)
+
+### 🧑‍💻 [Code](/controlling-time/) | 🎥 [Video](https://www.youtube.com/watch?v=28DfWgT_zQk)
