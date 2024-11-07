@@ -23,7 +23,7 @@ export class DashboardPage {
   }
 
   public async login() {
-    // set you login URL
+    // set your login URL
     await this.page.goto("...")
     await this.$email.fill(this.user.email)
     await this.$password.fill(this.user.password)

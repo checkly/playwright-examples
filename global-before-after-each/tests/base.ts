@@ -5,14 +5,14 @@ export const test = base.extend<{ exceptionLogger: void; timeLogger: void }>({
     async ({}, use) => {
       // before test
       // ...
-      console.log(`"${test.info().title}" started ${new Date().toISOString()}`)
+      test.info().attach("Start time", { body: `${new Date().toISOString()}` })
 
       // kick off test
       await use()
 
       // after test
       // ...
-      console.log(`"${test.info().title}" ended ${new Date().toISOString()}`)
+      test.info().attach("End time", { body: `${new Date().toISOString()}` })
     },
     { auto: true },
   ],
@@ -31,7 +31,6 @@ export const test = base.extend<{ exceptionLogger: void; timeLogger: void }>({
       // after test
       // ...
       if (exceptions.length > 0) {
-        console.log(exceptions.toString())
         await test.info().attach("frontend-exceptions", {
           body: exceptions
             .map((error) => `${error.message}\n${error.stack}`)
