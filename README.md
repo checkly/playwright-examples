@@ -43,3 +43,9 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![How to control time zones and timeouts in Playwright ](https://github.com/user-attachments/assets/fbf07a0a-3202-44fc-9931-ba71ecbd162e)
 
 ### 🧑‍💻 [Code](/controlling-time/) | 🎥 [Video](https://www.youtube.com/watch?v=28DfWgT_zQk)
+
+## How to add global `beforeEach` and `afterEach` hooks
+
+![export 3xc(1)](https://github.com/user-attachments/assets/bc4d9711-802d-4e90-b887-07b63decf295)
+
+### 🧑‍💻 [Code](/global-before-after-each/) | 🎥 [Video](https://www.youtube.com/watch?v=hegZS46J0rA)
