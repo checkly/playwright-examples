@@ -1,0 +1,21 @@
+{
+  "name": "api-schema-validation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.0",
+    "zod": "^3.24.1"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
