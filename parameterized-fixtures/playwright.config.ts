@@ -22,7 +22,7 @@ export default defineConfig<TestOptions>({
   use: {
     trace: "on-first-retry",
     // override the default user
-    user: { email: "stefan@checklyhq.com", password: "..." }
+    user: { email: "stefan@checklyhq.com", password: "..." },
   },
 
   projects: [
