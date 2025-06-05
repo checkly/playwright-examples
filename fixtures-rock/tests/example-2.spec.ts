@@ -1,17 +1,17 @@
-import { test } from "./base";
+import { expect, test } from "./base";
 
-test.use({ user: { email: "test@email.com", password: "..." } });
+test("fixtues allow to create setup / teardowns", async ({ page }) => {
+  const errors: Array<Error> = [];
 
-test("fixtures offer clean dependency and config management - part 1", async ({
-  dashboardPage,
-}) => {
-  await dashboardPage.goto();
-  await dashboardPage.login();
-});
+  // listen to exceptions during the test sessions
+  page.on("pageerror", (error) => {
+    errors.push(error);
+  });
 
-test("fixtures offer clean dependency and config management - part 2", async ({
-  dashboardPage,
-}) => {
-  await dashboardPage.goto();
-  await dashboardPage.createCheck();
+  // test code
+  // ...
+  await page.goto("https://checklyhq.com");
+
+  // assert that there haven’t been any errors
+  expect(errors).toHaveLength(0);
 });

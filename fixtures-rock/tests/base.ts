@@ -1,27 +1,19 @@
-import { test as base, expect, Page } from "@playwright/test";
+import { test as base, expect } from "@playwright/test";
 import { DashboardPage, User } from "./poms/dashboard";
 
 export type TestOptions = {
-  page: Page;
   dashboardPage: DashboardPage;
   user: User;
-  failOnJSError: boolean;
 };
 
 export const test = base.extend<TestOptions>({
   dashboardPage: async ({ page, user }, use) => {
     const dashboard = new DashboardPage(page, user);
+    console.log("POM");
     await use(dashboard);
   },
 
-  user: [
-    { email: "your@email.com", password: "your-password" },
-    { option: true },
-  ],
-
-  failOnJSError: [true, { option: true }],
-
-  page: async ({ page, failOnJSError }, use) => {
+  page: async ({ page }, use) => {
     const errors: Array<Error> = [];
 
     // listen to exceptions during the test sessions
@@ -29,12 +21,19 @@ export const test = base.extend<TestOptions>({
       errors.push(error);
     });
 
+    console.log("page");
     await use(page);
 
-    if (failOnJSError) {
-      expect(errors).toHaveLength(0);
-    }
+    expect(errors).toHaveLength(0);
   },
+
+  user: [
+    {
+      email: "your@email.com",
+      password: "your-password",
+    },
+    { option: true },
+  ],
 });
 
 export { expect } from "@playwright/test";

@@ -2,14 +2,6 @@ import { defineConfig, devices } from "@playwright/test";
 import { TestOptions } from "./tests/base";
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
-
-/**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig<TestOptions>({
@@ -31,7 +23,10 @@ export default defineConfig<TestOptions>({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    user: { email: "general@email.com", password: "..." },
+    user: {
+      email: "general@email.com",
+      password: "...",
+    },
   },
 
   /* Configure projects for major browsers */
@@ -40,7 +35,10 @@ export default defineConfig<TestOptions>({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        user: { email: "project@email.com", password: "..." },
+        user: {
+          email: "project@email.com",
+          password: "...",
+        },
       },
     },
   ],
