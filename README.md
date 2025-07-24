@@ -55,3 +55,9 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![export 3xc(2)](https://github.com/user-attachments/assets/d1bc9835-5227-4a89-8bcd-ff15e443cdae)
 
 ### 🧑‍💻 [Code](/api-schema-validation/) | 🎥 [Video](https://www.youtube.com/watch?v=axBr9gnITOo)
+
+## 3 Reasons Why You Should Use Custom Playwright Fixtures
+
+![export 3xc](https://github.com/user-attachments/assets/5418a1fa-3220-47f2-8638-91568769a330)
+
+### 🧑‍💻 [Code](/fixtures-rock/) | 🎥 [Video](https://www.youtube.com/watch?v=wXHiq9H3MB0)
