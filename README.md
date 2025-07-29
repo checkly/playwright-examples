@@ -61,3 +61,9 @@ This repository holds the demo code for Checkly tutorials and videos.
 ![export 3xc](https://github.com/user-attachments/assets/5418a1fa-3220-47f2-8638-91568769a330)
 
 ### 🧑‍💻 [Code](/fixtures-rock/) | 🎥 [Video](https://www.youtube.com/watch?v=wXHiq9H3MB0)
+
+## Automatically Catch Failed HTTP Requests in Your Playwright Tests!
+
+![export 3xc(3)](https://github.com/user-attachments/assets/882602ab-7747-4861-843f-04aa48e57361)
+
+### 🧑‍💻 [Code](/network-monitoring) | 🎥 [Video](https://www.youtube.com/watch?v=sKpwE84K9fU)
